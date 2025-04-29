@@ -3,6 +3,8 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import Home from "../screens/Home";
 import Order from "../screens/Order";
+import Reserve from "../screens/Reserve";
+import TakeAway from "../screens/TakeAway";
 
 const Stack = createStackNavigator();
 export default function StackNavigator(){
@@ -11,6 +13,8 @@ export default function StackNavigator(){
             <StackNavigator initialRouteName="Home">
                 <Stack.Screen name="Home" component={Home}/>
                 <Stack.Screen name="Order" component={Order}/>
+                <Stack.Screen name="Reserve" component={Reserve}/>
+                <Stack.Screen name="TakeAway" component={TakeAway}/>
             </StackNavigator>
         </NavigationContainer>
     )
