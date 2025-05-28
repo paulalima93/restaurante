@@ -1,6 +1,7 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+import { Stack } from 'expo-router';
 import Home from "../screens/Home";
 import Order from "../screens/Order";
 import Reserve from "../screens/Reserve";
@@ -16,6 +17,6 @@ export default function StackNavigator(){
                 <Stack.Screen name="Reserve" component={Reserve}/>
                 <Stack.Screen name="TakeAway" component={TakeAway}/>
             </StackNavigator>
-        </NavigationContainer>
+        </NavigationContainer> 
     )
 }

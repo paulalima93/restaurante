@@ -1,11 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import StackNavigator from './components/StackNavigator';
+
+
+import Home from './screens/Home';
+import Order from './screens/Order';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <StackNavigator />
+      <Order />
     </View>
   );
 }
@@ -13,7 +16,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#151515',
-    justifyContent: 'center',
+    // backgroundColor: '#151515',
+    backgroundColor: '#fff',
+    //justifyContent: 'center',
   },
 });
