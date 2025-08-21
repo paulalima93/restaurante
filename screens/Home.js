@@ -1,10 +1,12 @@
 import React from "react";
 import { View, Text, Pressable,StyleSheet, Image } from "react-native";
-
+import { useNavigation } from '@react-navigation/native';
 export default function Home() {
+    const navigation = useNavigation();
+
     return (
         <View style={styles.container}>
-            <Pressable style={styles.button}>
+            <Pressable style={styles.button} onPress={() => navigation.navigate('Order')}>
                 <Image source={require('../assets/img-button/1.png')} style={{width: 70, height:70}}/>
                 <Text style={styles.buttonText}> ORDER FOOD </Text>
             </Pressable>
@@ -25,6 +27,8 @@ const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
         justifyContent: 'center',
+        flex: 1,
+        backgroundColor: '#151515',
     },
     button: {
       backgroundColor: '#ce4257',
@@ -35,7 +39,7 @@ const styles = StyleSheet.create({
       borderRadius: 20,
       marginBottom: 20,
       flexDirection: 'row',
-      gap: 30
+      gap: 30,
     },
     buttonText : {
         color: '#FFF',

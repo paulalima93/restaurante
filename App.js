@@ -1,23 +1,26 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-
-
-import Home from './screens/Home';
-import Order from './screens/Order';
+import MyStack from './components/StackNavigator';
+import { NavigationContainer } from '@react-navigation/native';
+import { CartProvider } from './components/CartContext';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Order />
+      <CartProvider>
+        <NavigationContainer>
+          <MyStack />
+        </NavigationContainer>
+      </CartProvider>
     </View>
+    
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // backgroundColor: '#151515',
-    backgroundColor: '#fff',
+    //backgroundColor: '#151515',
     //justifyContent: 'center',
   },
 });

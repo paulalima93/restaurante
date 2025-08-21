@@ -1,0 +1,42 @@
+[
+  {
+    "nome": "Frango Grelhado com Legumes",
+    "preco": 25.9,
+    "imagem": "https://www.rbsdirect.com.br/imagesrc/35611155.jpg?w=700",
+    "quantidade_g": 250,
+    "calorias": 350,
+    "tipo": ["Chicken", "Frequent Order"]
+  },
+  {
+    "nome": "Salada Caesar",
+    "preco": 18.5,
+    "imagem": "https://www.rbsdirect.com.br/imagesrc/35611155.jpg?w=700",
+    "quantidade_g": 180,
+    "calorias": 220,
+    "tipo": ["Veg", "Frequent Order"]
+  },
+  {
+    "nome": "Lasanha Bolonhesa",
+    "preco": 32,
+    "imagem": "https://www.rbsdirect.com.br/imagesrc/35611155.jpg?w=700",
+    "quantidade_g": 300,
+    "calorias": 450,
+    "tipo": ["Meat"]
+  },
+  {
+    "nome": "Hambúrguer Artesanal",
+    "preco": 28.75,
+    "imagem": "https://www.rbsdirect.com.br/imagesrc/35611155.jpg?w=700",
+    "quantidade_g": 200,
+    "calorias": 520,
+    "tipo": ["Meat", "Frequent Order"]
+  },
+  {
+    "nome": "Risoto de Cogumelos",
+    "preco": 30,
+    "imagem": "https://www.rbsdirect.com.br/imagesrc/35611155.jpg?w=700",
+    "quantidade_g": 270,
+    "calorias": 400,
+    "tipo": ["Veg"]
+  }
+]

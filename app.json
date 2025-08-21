@@ -25,13 +25,6 @@
       "favicon": "./assets/favicon.png",
       "bundler": "metro"
     },
-    "scheme": "your-app-scheme",
-    "plugins": [
-      "expo-router"
-    ]
-    
+    "scheme": "your-app-scheme"
   }
-  
-
-
 }
