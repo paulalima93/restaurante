@@ -9,8 +9,7 @@
 
 ## 📌 Descrição
 
-Aplicativo de restaurante desenvolvido em **React Native**, com foco em ensino de desenvolvimento de aplicativos móveis.  
-Permite criar conta, gerenciar usuário, navegar pelo menu, adicionar itens ao carrinho e visualizar a quantidade de itens em tempo real.
+Aplicativo de restaurante desenvolvido em **React Native**, com foco em ensino de desenvolvimento de aplicativos móveis. Permite criar conta, gerenciar usuário, navegar pelo menu, adicionar itens ao carrinho e visualizar a quantidade de itens em tempo real.
 
 ---
 
@@ -38,8 +37,7 @@ Permite criar conta, gerenciar usuário, navegar pelo menu, adicionar itens ao c
 
 ## 🛠 Tecnologias Utilizadas
 
- ________________________________________________________________________________
-| Tecnologia         |   Função                                                  |
+| Tecnologia         | Função                                                    |
 |--------------------|-----------------------------------------------------------|
 | React Native       | Framework principal para desenvolvimento mobile           |
 | Expo               | Ferramenta para desenvolvimento, testes e execução do app |
@@ -47,38 +45,30 @@ Permite criar conta, gerenciar usuário, navegar pelo menu, adicionar itens ao c
 | Firebase Firestore | Banco de dados para usuários e pedidos                    |
 | React Navigation   | Navegação entre telas (Stack + Bottom Tabs)               |
 | React Context API  | Gerenciamento do estado global do carrinho                |
-|________________________________________________________________________________|
 
 ---
 
 ## 🚀 Como Executar
 
 1. Clonar o repositório:  
- git clone https://github.com/paulalima93/restaurante/
+git clone https://github.com/paulalima93/restaurante/
 
-2. Instalar dependências:
+2. Instalar dependências:  
 npm install
 
-3. Rodar o app:
+3. Rodar o app:  
 expo start
 
-4. Abrir no dispositivo ou emulador (Android/iOS):
-5. 
-No dispositivo físico: escanear o QR code exibido no terminal ou navegador com o app Expo Go (Android/iOS).
+4. Abrir no dispositivo ou emulador (Android/iOS):  
+No dispositivo físico: escanear o QR code exibido no terminal ou navegador com o app Expo Go (Android/iOS).  
 No emulador: selecionar "Run on Android device/emulator" ou "Run on iOS simulator" no menu do Expo.
 
 ---
 
 ## 🗂 Estrutura do Projeto
-/components         # Componentes reutilizáveis e contextos
 
-/screens            # Telas do aplicativo
-
-/assets             # Imagens e ícones
-
-/firebaseConfig.js  # Configuração do Firebase
-
+/components         # Componentes reutilizáveis e contextos  
+/screens            # Telas do aplicativo  
+/assets             # Imagens e ícones  
+/firebaseConfig.js  # Configuração do Firebase  
 /App.js             # Arquivo principal
-
-
-
