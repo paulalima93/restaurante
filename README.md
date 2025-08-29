@@ -1,4 +1,4 @@
-# 🍔 Delivery App - React Native
+# 🍔 App Restaurante - React Native
 
 ![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase)
@@ -9,7 +9,7 @@
 
 ## 📌 Descrição
 
-Aplicativo de delivery desenvolvido em **React Native**, com foco em ensino de desenvolvimento de aplicativos móveis.  
+Aplicativo de restaurante desenvolvido em **React Native**, com foco em ensino de desenvolvimento de aplicativos móveis.  
 Permite criar conta, gerenciar usuário, navegar pelo menu, adicionar itens ao carrinho e visualizar a quantidade de itens em tempo real.
 
 ---
@@ -54,22 +54,32 @@ Permite criar conta, gerenciar usuário, navegar pelo menu, adicionar itens ao c
 ## 🚀 Como Executar
 
 1. Clonar o repositório:  
-git clone <url-do-repo>
+ git clone https://github.com/paulalima93/restaurante/
+
 2. Instalar dependências:
 npm install
+
 3.Rodar o app:
 expo start
+
 4.Abrir no dispositivo ou emulador (Android/iOS):
+
 No dispositivo físico: escanear o QR code exibido no terminal ou navegador com o app Expo Go (Android/iOS).
+
 No emulador: selecionar "Run on Android device/emulator" ou "Run on iOS simulator" no menu do Expo.
 
 ---
 
 ## 🗂 Estrutura do Projeto
 /components       # Componentes reutilizáveis e contextos
+
 /screens          # Telas do aplicativo
+
 /assets           # Imagens e ícones
+
 /firebaseConfig.js# Configuração do Firebase
+
 /App.js           # Arquivo principal
+
 
 
