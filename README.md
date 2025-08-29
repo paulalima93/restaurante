@@ -59,27 +59,26 @@ Permite criar conta, gerenciar usuário, navegar pelo menu, adicionar itens ao c
 2. Instalar dependências:
 npm install
 
-3.Rodar o app:
+3. Rodar o app:
 expo start
 
-4.Abrir no dispositivo ou emulador (Android/iOS):
-
+4. Abrir no dispositivo ou emulador (Android/iOS):
+5. 
 No dispositivo físico: escanear o QR code exibido no terminal ou navegador com o app Expo Go (Android/iOS).
-
 No emulador: selecionar "Run on Android device/emulator" ou "Run on iOS simulator" no menu do Expo.
 
 ---
 
 ## 🗂 Estrutura do Projeto
-/components       # Componentes reutilizáveis e contextos
+/components         # Componentes reutilizáveis e contextos
 
-/screens          # Telas do aplicativo
+/screens            # Telas do aplicativo
 
-/assets           # Imagens e ícones
+/assets             # Imagens e ícones
 
-/firebaseConfig.js# Configuração do Firebase
+/firebaseConfig.js  # Configuração do Firebase
 
-/App.js           # Arquivo principal
+/App.js             # Arquivo principal
 
 
 
