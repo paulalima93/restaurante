@@ -18,6 +18,11 @@ export default function Home() {
                 <Image source={require('../assets/img-button/3.png')} style={styles.buttonImage}/>
                 <Text style={styles.buttonText}> RESERVE TABLE </Text>
             </Pressable>
+
+
+            <Pressable style={[styles.button, {backgroundColor: "#250001"}]} onPress={() => navigation.navigate('User')}>
+                <Text style={styles.buttonText}> USER </Text>
+            </Pressable>
             
         </View>
     )

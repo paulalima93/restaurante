@@ -5,6 +5,7 @@ import Cart from '../screens/Cart';
 import MyTabs from './BottomTab';
 import Login from '../screens/Login';
 import Register from '../screens/Register';
+import User from '../screens/User';
 
 const Stack = createStackNavigator();
 
@@ -18,6 +19,7 @@ function MyStack() {
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Order" component={Order} />
         <Stack.Screen name="Cart" component={Cart} />
+        <Stack.Screen name="User" component={User} />
       </Stack.Navigator>
   );
 }

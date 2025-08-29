@@ -1,11 +1,24 @@
 import React, {useState} from "react";
-import { View, Text, TextInput, Pressable, StyleSheet, Image } from "react-native";
+import { View, Text, TextInput, Pressable, StyleSheet, Image, Alert } from "react-native";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebaseConfig";
 
 export default function Login({navigation}){
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+
+    const handleLogin = async () => {
+        if(!email || !password){
+            Alert.alert("Erro", "Preencha todos os campos")
+        }
+
+        try{
+            await signInWithEmailAndPassword(auth, email, password);
+            navigation.navigate("Home");
+        }catch (error){
+            Alert.alert("Erro no login", error.message);
+        }
+    };
 
     
     return(
@@ -29,7 +42,7 @@ export default function Login({navigation}){
                     secureTextEntry
                 />
 
-                <Pressable style={styles.loginButton} onPress={() => navigation.navigate('Home')}>
+                <Pressable style={styles.loginButton} onPress={() => handleLogin()}>
                     <Text style={styles.loginButtonText}> Entrar </Text>
                 </Pressable>
 

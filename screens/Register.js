@@ -1,7 +1,8 @@
 import React, {useState} from "react";
 import { View, Text, TextInput, Pressable, StyleSheet, Image, Alert } from "react-native";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../firebaseConfig";
+import { auth, db } from "../firebaseConfig"; //mod
+import { doc, setDoc } from "firebase/firestore"; //add
 
 export default function Register({navigation}){
     const [email, setEmail] = useState('');
@@ -15,7 +16,19 @@ export default function Register({navigation}){
         }
 
         try{
-            await createUserWithEmailAndPassword(auth, email, password);
+           // await createUserWithEmailAndPassword(auth, email, password);
+
+           const userCredential = await createUserWithEmailAndPassword(auth, email, password); //mod
+           const user = userCredential.user; //add
+
+           await setDoc(doc(db, "usuarios", user.uid), {
+            uid: user.uid,
+            email: user.email,
+            nome: " ",
+            endereco: " ",
+            telefone: " "
+            
+           });
             Alert.alert("Sucesso!", "Conta criada!");
             navigation.navigate("Login");   
         } catch (error){
