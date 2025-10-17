@@ -20,7 +20,9 @@
     "react-dom": "18.3.1",
     "react-native": "0.76.9",
     "react-native-gesture-handler": "~2.20.2",
-    "react-native-web": "~0.19.13"
+    "react-native-web": "~0.19.13",
+    "expo-checkbox": "~4.0.1",
+    "@react-native-community/datetimepicker": "8.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

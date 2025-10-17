@@ -6,6 +6,8 @@ import MyTabs from './BottomTab';
 import Login from '../screens/Login';
 import Register from '../screens/Register';
 import User from '../screens/User';
+import Reserve from '../screens/Reserve'
+import Confirmation from '../screens/Confirmation';
 
 const Stack = createStackNavigator();
 
@@ -20,6 +22,9 @@ function MyStack() {
         <Stack.Screen name="Order" component={Order} />
         <Stack.Screen name="Cart" component={Cart} />
         <Stack.Screen name="User" component={User} />
+        <Stack.Screen name="Reserve" component={Reserve} />
+        <Stack.Screen name="Confirmation" component={Confirmation} />
+        
       </Stack.Navigator>
   );
 }

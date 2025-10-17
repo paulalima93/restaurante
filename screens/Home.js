@@ -6,15 +6,17 @@ export default function Home() {
 
     return (
         <View style={styles.container}>
-            <Pressable style={styles.button} onPress={() => navigation.navigate('Order')}>
+            <Pressable 
+                style={styles.button} 
+                onPress={() => navigation.navigate('Order')}
+            >
                 <Image source={require('../assets/img-button/1.png')} style={{width: 70, height:70}}/>
                 <Text style={styles.buttonText}> ORDER FOOD </Text>
             </Pressable>
-            <Pressable style={[styles.button, {backgroundColor: "#935025"}]}>
-                <Image source={require('../assets/img-button/2.png')} style={styles.buttonImage}/>
-                <Text style={styles.buttonText}> TAKE AWAY </Text>
-            </Pressable>
-            <Pressable style={[styles.button, {backgroundColor: "#250001"}]}>
+            <Pressable 
+                style={[styles.button, {backgroundColor: "#250001"}]}
+                onPress={() => navigation.navigate('Reserve')}
+            >
                 <Image source={require('../assets/img-button/3.png')} style={styles.buttonImage}/>
                 <Text style={styles.buttonText}> RESERVE TABLE </Text>
             </Pressable>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { View, Text, Pressable, StyleSheet, Image, TextInput, FlatList, Dimensions, Modal } from "react-native";
 import { useCart } from '../components/CartContext';
 import { useNavigation } from '@react-navigation/native';
+
 import menu from './menu.json';
 
 
